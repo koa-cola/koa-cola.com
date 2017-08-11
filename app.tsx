@@ -24,6 +24,7 @@ class FooController {
     shell.cd(`public`);
     shell.exec('git pull');
     shell.cp('./*.html', './doc/')
+    return {code : 200}
   }
 }
 RunApp({
