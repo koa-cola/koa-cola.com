@@ -22,7 +22,7 @@ class FooController {
     console.log(body);
     var shell = require('shelljs');
     shell.cd(`public`);
-    shell.exec('git pull');
+    shell.exec('git pull -X theirs origin');
     shell.cp('./*.html', './doc/')
     return {code : 200}
   }
